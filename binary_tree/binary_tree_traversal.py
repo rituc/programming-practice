@@ -68,10 +68,10 @@ def vertical_order(root):
 
 
 def height(root):
-	h = 0
-	if root!=None:
-		h = max(height(root.left), height(root.right)) + 1
-	return h
+	if root:
+		return max(height(root.left), height(root.right)) + 1
+		# print h
+	return 0
 
 def main():
 	# root = Node(1)
@@ -99,8 +99,8 @@ def main():
 	root.right.left.right = Node(8)
 	root.right.right.right = Node(9)
 
-	print "\n Vertical Order:"
-	vertical_order(root)
+	# print "\n Vertical Order:"
+	# vertical_order(root)
 
 	print "\nHeight of tree: ",  height(root)
 
