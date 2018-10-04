@@ -15,12 +15,11 @@ class LinkedList:
 		new_node.next = self.head;
 		self.head = new_node
 
-	def delete_node(self, node):
-		curr = self.head
-		while(curr!=node):
-			curr = curr.next
-
-		curr.next = curr.next.next
+	def print_list(self):
+		temp = self.head
+		while(temp):
+			print temp.data
+			temp = temp.next
 
 
 
